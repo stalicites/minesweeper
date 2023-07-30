@@ -1,25 +1,6 @@
-# Python Class 3251
-# Lesson 9 Problem 1
-# Author: cdm (472521)
-
 # from logging import root
 from tkinter import *
 import random
-
-
-'''
-Specifically, write a function $\verb#play_minesweeper(width,height,numBombs)#$ that launches a tkinter window to play the game Minesweeper on a $width \times height$ board of squares, with $numBombs$ of the squares randomly selected to contain bombs.
-
-The goal in Minesweeper is to expose all the squares that do not contain bombs. The player exposes a square by left-clicking on it.
-
--- If the square contains a bomb, KABOOM! -- the game is over and the player loses. The game should display all of the remaining unexposed, unflagged bombs. (See below about "flagging".)
-
--- If the square does not contain a bomb, it displays a number that indicates the number of adjacent squares (including diagonally-adjacent) that contain a bomb. (If none of the adjacent squares contain a bomb, the exposed square is blank -- you can optionally have the game auto-expose all of the adjacent squares, because since you know that none of them are bombs, it's safe to do so.) If the player successfully exposes all the non-bomb squares, the player wins.
-
-The player may also flag squares that he/she believes to contain a bomb, by right-clicking on them. Flagged squares should display as asterisks, and cannot be exposed unless they are unflagged by again right-clicking on them (which also removes the asterisk). The game should also display the number of bombs minus the number of placed flags.
-
-'''
-
 
 class Tile():
 
